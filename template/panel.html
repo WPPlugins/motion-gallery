@@ -1,0 +1,48 @@
+﻿<div class="wrap"> 
+	<form method="post" action="">
+		<fieldset>
+			<legend><strong>motion <?php echo $id; ?>. Write in your Posts: [motion_gallery <?php echo $id; ?> /]</strong>			</legend>
+			<p>			  <br/>
+			  <label for="folder" accesskey="f">Images Folder(Sample: images/): 
+			    <input type='text' id='folder<?php echo $id; ?>'  name='folder<?php echo $id; ?>'  value='<?php echo $folder; ?>'/>
+		      </label>
+		  </p>
+			<p>
+			  <label for="height3" accesskey="o">Flash Height (px, default 250px):
+			    <input type='text' id='height<?php echo $id; ?>'  name='height<?php echo $id; ?>'  value='<?php echo $height; ?>'/>
+		      </label>
+<br/>
+			  <label for="width3" accesskey="o">Flash Width(px or %, default: 100%):
+			    <input type='text' id='width<?php echo $id; ?>'  name='width<?php echo $id; ?>'  value='<?php echo $width; ?>'/>
+		      </label>
+		  </p>
+			<p>
+			  <label for="row" accesskey="r">Images Rows:
+			    <input type='text' id='row<?php echo $id; ?>'  name='row<?php echo $id; ?>'  value='<?php echo $row; ?>'/>
+		      </label>
+			  <br/>
+			  <label for="type3" accesskey="s">Images thumbnails width:
+			    <input type='text' id='type<?php echo $id; ?>'  name='type<?php echo $id; ?>'  value='<?php echo $type; ?>'/>
+		      </label>
+              <input name="id" type="hidden" id="id" value="<?php echo $id; ?>" />
+<br/>
+			  <br/>
+			  <label for="color1" accesskey="i">Images thumbnail color(Sample white: ffffff):
+			    <input type='text' id='color1<?php echo $id; ?>'  name='color1<?php echo $id; ?>'  value='<?php echo $color1; ?>'/>
+		      </label>
+			  <br/>
+			  <label for="color3" accesskey="i">Buttons color:
+			    <input type='text' id='color3<?php echo $id; ?>'  name='color3<?php echo $id; ?>'  value='<?php echo $color3; ?>'/>
+		      </label>
+		  </p>
+			<p><br/>
+			  <input type='submit' name='' value='SAVE Motion <?php echo $id; ?>' />
+		  </p>
+      </fieldset>
+	</form>
+  <form method="post" action="">
+	  <input name="borrar" type="hidden" id="borrar" value="<?php echo $id; ?>">
+     <input type='submit' name='' value='Delete motion gallery <?php echo $id; ?>' />
+    </form>
+  <hr />
+</div>
